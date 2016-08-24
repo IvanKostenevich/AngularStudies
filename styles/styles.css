@@ -1,0 +1,11 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+li {
+    display: inline-block;
+    margin-left: 50px;
+}
+h1{
+    margin-left: 50px;
+}

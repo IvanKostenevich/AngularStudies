@@ -1,0 +1,13 @@
+<div>
+    <h2>Please choose part and the quantity to form the queue:</h2>
+    <select ng-model = "selectedPart" ng-options = "part.name for part in sparePartList">
+    </select>
+    <button ng-click="addToQueue()">Add to queue</button>
+    <p>Production queue:{{productionQueue}}</p>
+    <p>Estimated Time: {{completionTime}} sec.</p>
+    <button ng-click="produceParts()">Produce!</button>
+    <progress id="progressBar" value="{{progressBar}}" max="{{completionTime}}"></progress>
+    <p>{{finalMessage}}</p>
+</div>
+
+
